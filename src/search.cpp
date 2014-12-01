@@ -37,7 +37,7 @@
 
 namespace Search {
 
-  volatile SignalsType Signals;
+  SignalsType Signals;
   LimitsType Limits;
   std::vector<RootMove> RootMoves;
   Position RootPos;

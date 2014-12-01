@@ -71,7 +71,7 @@ void ThreadBase::notify_one() {
 
 // wait_for() set the thread to sleep until condition 'b' turns true
 
-void ThreadBase::wait_for(volatile const bool& b) {
+void ThreadBase::wait_for(const bool& b) {
 
   mutex.lock();
   while (!b) sleepCondition.wait(mutex);

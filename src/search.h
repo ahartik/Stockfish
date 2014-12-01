@@ -87,7 +87,7 @@ struct LimitsType {
 };
 
 
-/// The SignalsType struct stores volatile flags updated during the search
+/// The SignalsType struct stores flags updated during the search
 /// typically in an async fashion e.g. to stop the search by the GUI.
 
 struct SignalsType {
@@ -96,7 +96,7 @@ struct SignalsType {
 
 typedef std::auto_ptr<std::stack<StateInfo> > StateStackPtr;
 
-extern volatile SignalsType Signals;
+extern SignalsType Signals;
 extern LimitsType Limits;
 extern std::vector<RootMove> RootMoves;
 extern Position RootPos;
